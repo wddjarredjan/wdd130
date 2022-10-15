@@ -1,0 +1,17 @@
+#contents img
+    {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 200px;
+        border-radius: 400px;
+        border: 10px solid rgb(66, 66, 66);
+    }
+#container
+    {  
+        background-color: gray;
+        width: 1280px;
+    }
+.background
+    {
+        text-align: center;
+    }
