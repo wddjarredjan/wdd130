@@ -126,6 +126,7 @@
       <p>
         YOU LOOKING FOR GREAT PACKAGING NEEDS? JA PACKAGING SERVICES ARE HERE FOR YOU!
       </p>
+    <div class="images">
       <p>Images for the Home page</p>
         <img src="images/homepage.jpg" alt="image for homepage">
         <img src="images/COLLAGE.png" alt="image for homepage">
@@ -149,6 +150,7 @@
         <img src="images/COLLAGE.png" alt="image for page3">
 
       </ul>
+    </div>
       <hr>
       <h2>
         Wireframes
@@ -195,7 +197,7 @@ Fonts are separated by a | */
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #01161e;  /* headlines on a white background */ 
-  --headline-color-on-color: #EDFFAB; /* headlines on a colored background */ 
+  --headline-color-on-color: #B87D4B; /* headlines on a colored background */ 
   --paragraph-color-on-white: #01161E; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #B87D4B; /* paragraph text on a colored background */ 
   --paragraph-background-color: #FCD7AD  ;
@@ -218,8 +220,14 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  width: 700px;
+  height: 500px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    font-family: "Permanent Marker", Tahoma, sans-serif;
+    color:#01161E;
+}
+h2, h3, h4, h5, h6 {
   font-family: "Permanent Marker", Tahoma, sans-serif;
   color:#01161E;
 }
@@ -234,16 +242,16 @@ hr {
 header {
   padding: 1em;
   text-align: center;
-  color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
+  color: #01161E;
+  background-color: #B87D4B;
 }
 header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+  color: #01161E;
 }
 
 p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
+  font-family: "Archivo Narrow", 'Times New Roman', Times, serif;
+  color: #01161e;
   padding: 1em;
 }
 .colors {
@@ -261,25 +269,25 @@ p {
 }
 
 .primary {
-  background-color: var(--primary-color);
+  background-color: #01161E;
 }
 .secondary {
-  background-color: var(--secondary-color);
+  background-color: #EDFFAB;
 }
 .accent1 {
-  background-color: var(--accent1-color);
+  background-color: #B87D4B;
 }
 .accent2{
   background-color: var(--accent2-color);
 }
 
 p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
+  background-color: #B87D4B;
+  color: #01161E;
 }
 
 nav {
-  background-color: var(--nav-background-color);
+  background-color: #B87D4B;
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
@@ -297,11 +305,11 @@ nav a {
 
 }
 nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+  color: #01161E;
 }
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  color: #01161E;
+  background-color: #EDFFAB;
 }
 
 .sitemap {
