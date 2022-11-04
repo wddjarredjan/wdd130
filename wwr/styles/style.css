@@ -8,8 +8,8 @@ body
     }
 #content
     {
-        text-align: center;
-        max-width: auto;
+        max-width: 1600px;
+        margin: 0 auto;
     }
 #logo_link
     {

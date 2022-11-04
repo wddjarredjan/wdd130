@@ -1,7 +1,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&family=Archivo+Narrow&family=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Archivo+Narrow&family=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -26,7 +26,6 @@ Fonts are separated by a | */
   --nav-hover-background-color: #FCD7AD;
 }
 
-
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
@@ -40,7 +39,7 @@ img {
   display: block;
   margin: 0 auto;
   width: 700px;
-  height: 500px;
+  height: 700px;
 }
 h1 {
     font-family: "Permanent Marker", Tahoma, sans-serif;
@@ -130,7 +129,6 @@ nav a:hover {
   color: #01161E;
   background-color: #EDFFAB;
 }
-
 .sitemap {
   display: grid;
   justify-content: center;
