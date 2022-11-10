@@ -183,12 +183,8 @@ nav a
 .msg p
     {
         line-height: 1.5em;
-<<<<<<< HEAD
         font-size: .8em;
         background-color: aquamarine;
-=======
-        font-size: 1em;
->>>>>>> 74747a05b6728ea8590ace54769ed6021636b9a5
         font-weight: bold;
         padding-bottom: 15px;
         justify-content: center;
