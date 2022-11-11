@@ -37,6 +37,7 @@ a
     }
 h1
     {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-align: center;
     }
 h2
@@ -300,4 +301,80 @@ a img
     footer {
         margin-top: 25px;
     }
+}
+
+/* SLIDESHOW */
+
+/* Styling the area of the slides */
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+  }
+
+  .slideshow {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+
+  .slide-wrapper {
+    width: calc(728px * 4);
+    animation: slide 10s ease infinite;
+  }
+
+  .slide:nth-child(1) {
+    background: green;
+  }
+   
+  .slide:nth-child(2) {
+    background: rgb(83, 83, 83);
+  }
+   
+  .slide:nth-child(3) {
+    background: red;
+  }
+   
+  .slide:nth-child(4) {
+    background: yellow;
+  }
+
+  .slide-number {
+    width: 800px;
+    height: 728px;
+  }
+
+  @keyframes slide {
+   
+    /* Calculate the margin-left for
+      each of the slides */
+      20% {
+        margin-left: 0px;
+      }
+     
+      40% {
+        margin-left: calc(-728px * 1);
+      }
+     
+      60% {
+        margin-left: calc(-728px * 2);
+      }
+     
+      80% {
+        margin-left: calc(-728px * 3);
+      }
+    }
+
+#contents   {
+    background-color: #396E94;
+    color: white;
+    justify-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Fuzzy Bubbles', Arial, Helvetica, sans-serif;
+}
+
+.aboutus {
+    margin: 50px;
 }
