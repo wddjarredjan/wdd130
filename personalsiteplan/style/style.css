@@ -97,6 +97,9 @@ footer a:hover
 }
 .logo-box img {
     border-radius: 10em;
+    position: relative;
+    height: 10em;
+    margin-left: -50px;
 }
 #nav-link a {
     color: #01161E;
