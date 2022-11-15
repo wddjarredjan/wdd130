@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Permanent+Marker&display=swap');
+
+/* Styling the area of the slides */
+#slideshow {
+    overflow: hidden;
+    height: 800px;
+    width: 728px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 30px;
+  }
+
+  .slideshow {
+    float: left;
+    height: 800px;
+    width: 728px;
+    border-radius: 30px;
+  }
+
+  .slide-wrapper {
+    width: calc(728px * 4);
+    animation: slide 10s ease infinite;
+  }
+
+  .slide:nth-child(1) {
+    background: green;
+  }
+   
+  .slide:nth-child(2) {
+    background: rgb(83, 83, 83);
+  }
+   
+  .slide:nth-child(3) {
+    background: red;
+  }
+   
+  .slide:nth-child(4) {
+    background: yellow;
+  }
+
+  .slide-number {
+    width: 800px;
+    height: 728px;
+  }
+
+  @keyframes slide {
+   
+    /* Calculate the margin-left for
+      each of the slides */
+      20% {
+        margin-left: 0px;
+      }
+     
+      40% {
+        margin-left: calc(-728px * 1);
+      }
+     
+      60% {
+        margin-left: calc(-728px * 2);
+      }
+     
+      80% {
+        margin-left: calc(-728px * 3);
+      }
+    }
+
+.home-img {
+    width: 100%;
+}
+
+body {
+    background-color: #d4a67c;
+}
+
+footer {  
+    background-color: #01161E;
+    padding: 10px 5px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+}
+footer a, p
+    {
+        color:#EDFFAB;
+    }
+footer a:hover
+    {
+        padding-top: 15px;
+    }
+
+#logo-link {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo-box img {
+    border-radius: 10em;
+}
+#nav-link a {
+    color: #01161E;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: larger;
+}
+#nav-link a:hover {
+    background-color:#EDFFAB;
+}
+#nav-link {
+    margin-bottom: 30px;
+}
+#text-container {
+    font-size: 30px;
+}
+.contents h1 {
+    color: #01161E;
+}
+.contents p {
+    font-style: italic;
+    color:#01161E
+}
+.social img {
+    border-radius: 50px;
+    width: 3em;
+}
