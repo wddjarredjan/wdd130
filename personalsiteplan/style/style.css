@@ -82,6 +82,7 @@ footer {
     align-items: center;
     font-weight: bold;
     font-size: large;
+    width: 100%;
 }
 footer a, p
     {
