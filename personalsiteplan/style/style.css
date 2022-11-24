@@ -1,24 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Permanent+Marker&display=swap');
-
+body {
+  display: grid;
+  grid-template-columns: 3fr;
+  background-color: #d4a67c;
+}
 /* Styling the area of the slides */
 #slideshow {
     overflow: hidden;
     height: 800px;
-    width: 728px;
+    width: 1000px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 20px;
     border-radius: 30px;
   }
 
   .slideshow {
     float: left;
     height: 800px;
-    width: 728px;
+    width: 1000px;
     border-radius: 30px;
+    transition: transform .5s;
+  }
+  .slideshow:hover {
+    transform: scale(1.2);
   }
 
   .slide-wrapper {
-    width: calc(728px * 4);
+    width: calc(1000px * 4);
     animation: slide 10s ease infinite;
   }
 
@@ -39,8 +47,8 @@
   }
 
   .slide-number {
-    width: 800px;
-    height: 728px;
+    width: 1000px;
+    height: 700px;
   }
 
   @keyframes slide {
@@ -52,31 +60,34 @@
       }
      
       40% {
-        margin-left: calc(-728px * 1);
+        margin-left: calc(-1000px * 1);
       }
      
       60% {
-        margin-left: calc(-728px * 2);
+        margin-left: calc(-1000px * 2);
       }
      
       80% {
-        margin-left: calc(-728px * 3);
+        margin-left: calc(-1000px * 3);
       }
     }
-
 .home-img {
-    width: 100%;
-    text-align: center;
+    width: 90%;
+    height: 75%;
+    border-radius: 10px;
+    transition: transform .5s;
 }
-
-body {
-    background-color: #d4a67c;
+.home-img:hover {
+  transform: scale(1.2);
+}
+.background-image {
+  text-align: center;
 }
 
 footer {  
     background-color: #01161E;
     padding: 10px 5px;
-    margin-top: 200px; 
+    margin-top: 50px; 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -106,26 +117,43 @@ footer a:hover
 #nav-link a {
     color: #01161E;
     padding: 10px;
-    font-family:'Courier New', Courier, monospace;
-    font-size: larger;
+    font-family:'Archivo Narrow';
+    font-size: medium;
 }
 #nav-link a:hover {
     background-color:#EDFFAB;
 }
 #nav-link {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
+    text-align: center;
 }
 #text-container {
     font-size: 30px;
 }
 .contents h1 {
-    color: #01161E;
+  margin-top: -150px;
+  color: #01161E;
+  text-align: center;
+  font-size: 1em;
 }
 .contents p {
-    font-style: italic;
-    color:#01161E
+  font-style: italic;
+  color:#01161E;
+  text-align: center;
+  font-size: 1em;
 }
 .social img {
     border-radius: 50px;
     width: 3em;
+}
+.home-contents p {
+  color: #01161E;
+  text-align: center;
+}
+.home-contents {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  font-size: 25px;
+  font-family: 'Archivo Narrow';
 }
