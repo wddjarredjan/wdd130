@@ -134,7 +134,8 @@ footer a:hover
   margin-top: -150px;
   color: #01161E;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-family: 'Permanent Marker';
 }
 .contents p {
   font-style: italic;
