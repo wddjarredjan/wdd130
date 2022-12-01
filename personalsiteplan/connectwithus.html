@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <header>
         <div id="logo-link">
             <div class="logo-box">
                 <img src="images/huswell.jpg" alt="Huswell Trading Logo">
@@ -16,34 +17,38 @@
             <div class="onclick" style="text-align:center;">
                 <span onclick="openNav()"> CHOOSE HERE </span>
             </div>
-        </div>
-    <!-- The overlay -->
-    <div id="myNav" class="overlay">
+            </div>
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
 
-        <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-        <!-- Overlay content -->
-        <div class="overlay-content">
-            <a href="index.html">HOME</a>
-            <a href="aboutus.html">ABOUT US</a>
-            <a href="connectwithus.html">CONNECT WITH US</a>
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="connectwithus.html">CONNECT WITH US</a>
+            </div>
         </div>
-  </div>
-  <script>
-    /* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+        <script>
+            /* Open when someone clicks on the span element */
+            function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+            }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-  </script>
+            /* Close when someone clicks on the "x" symbol inside the overlay */
+            function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    </header>
     <div class="background-image">
         <img class="home-img" src="images/homepage.jpg" alt="Home Page Image">
     </div>
+    <main>
+        
+    </main>
     <footer>
         <p>JA PACKAGING SERVICES &copy; 2022</p>
         <p><a href="index.html">HOME</a></p>

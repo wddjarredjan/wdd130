@@ -138,6 +138,9 @@ body {
   font-size: larger;
   margin-top: 25px;
   margin-bottom: 80px;
+  padding: 5px;
+  max-width: fit-content;
+  background-color: #EDFFAB;
 }
 .onclick:hover {
   color:#01161E;
@@ -223,4 +226,42 @@ footer a:hover
   width: 100%;
   font-size: 25px;
   font-family: 'Archivo Narrow';
+}
+.background-img {
+  max-width: 50%;
+}
+.about-us-image {
+  border: 5px solid #d9c2a3;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.about-us-image:hover {
+  transform: scale(1.2);
+}
+#about-us-contents {
+  margin-top: -100px;
+}
+.question-box h1 {
+  font-family: 'Permanent Marker';
+  text-align: center;
+  margin-top: -50px;
+  font-size: xx-large;
+  margin-bottom: 60px;
+}
+.about-us-text p {
+  color:#01161E;
+}
+.about-us-text {
+  line-height: 1.5em;
+  font-size: 2em;
+  font-weight: bolder;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  transition: transform .5s;
+}
+.about-us-text:hover {
+  transform: scale(1.0);
 }
