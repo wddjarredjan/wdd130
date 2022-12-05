@@ -132,29 +132,27 @@
         <h1> SEND US EMAIL NOW! </h1>
     </div>
         <main>
-            <main>
-                <div id="feedback">
-                    <form action="mailto:jarredjohnmadelabernal@gmail.com" method="post">
-                        <ul>
-                        <li>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="user_name" />
-                        </li>
-                        <li>
-                            <label for="mail">E-mail:</label>
-                            <input type="email" id="mail" name="user_email" />
-                        </li>
-                        <li>
-                            <label for="msg">Message:</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                        </li>
-                        <li class="button">
-                            <button type="submit">Send your message</button>
-                        </li>
-                        </ul>
-                    </form>
-                </div>
-            </main>
+            <div id="feedback">
+                <form action="mailto:jarredjohnmadelabernal@gmail.com" method="post">
+                    <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                    </ul>
+                </form>
+            </div>
             <script>
                 // get the feedback div element so we can do something with it.
                 const feedbackElement = document.getElementById('feedback');
