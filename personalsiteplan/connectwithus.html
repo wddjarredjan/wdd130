@@ -15,7 +15,7 @@
                 <img src="images/logo.png" alt="Main Logo Ja Packaging Services">
             </div>
             <div class="onclick" style="text-align:center;">
-                <span onclick="openNav()"> CHOOSE HERE </span>
+                <span onclick="openNav()"> MENU </span>
             </div>
             </div>
             <!-- The overlay -->
@@ -46,9 +46,133 @@
     <div class="background-image">
         <img class="home-img" src="images/homepage.jpg" alt="Home Page Image">
     </div>
-    <main>
+    <div class="connect-box">
+        <h1> CONNECT WITH US! </h1>
+    </div>
+    <div class="main-box">
+        <div class="questions-content">
+            <div class="question-box">
+                <img class="question-mark-logo" src="images/question-mark-icon.png" alt="Question Mark Icon">
+            </div>
+            <div class="textbox-title">
+                <h1> Frequently Asked Questions </h1>
+            </div>
+        </div>
+        <div class="collapsible-box">
+            <button class="collapsible">1. What kind of business are we? </button>
+            <div class="content">
+                <p>
+                    We are a direct manufacturer of Paper Mache and other Hard Rigid Boxes and Offset Boxes. We are considered as Small Business Enterprise.
+                </p>
+            </div>
+            <button class="collapsible">2. What quality of products are we offering? </button>
+            <div class="content">
+                <p>
+                    We have a high-quality finished products because it is made from a handmade pasteboard box covered with a specialty paper.
+                    It's categories are Hard Rigid Boxes, Premium Boxes, and Offset Boxes.
+                </p>
+            </div>
+            <button class="collapsible">3. How are we doing our products?</button>
+            <div class="content">
+                <p>
+                    Our products are handmade by a professional "magtataka" from the province of Laguna.
+                    It is made by a different thickness of pasteboard, shaping it like a box in various sizes, and covering it with special papers,
+                    printed layouts, or even velvet coverings, depends on what the clients are requesting.
+                </p>
+            </div>
+            <button class="collapsible">4. Where are we located?</button>
+            <div class="content">
+                <p>
+                    We are located at Brgy. Kabulusan, Pakil, Laguna. But we have a satellite office/shop in 
+                    72 Adrian St. North Fairview Park Subdivision, Brgy. North Fairview Novaliches Quezon City.
+                </p>
+            </div>
+            <button class="collapsible">5. What are your Terms and Conditions?</button>
+            <div class="content">
+                <p>
+                    When it comes to payment terms and conditions, we are requiring 50% Downpayment prior to production,
+                    and 100% Full Payment upon delivery for Customized Orders. But for retail orders, no full payment
+                    no releasing on the same day. <br>
+                    We are also accepting clients who wants to make a contract with us. It will undergo some local processing
+                    of documents and signing of contracts from both sides to make it legal and authentic.
+                </p>
+            </div>
+            <button class="collapsible">6. How to order?</button>
+            <div class="content">
+                <p>
+                    We have marketplace listings on facebook. We also have <a href="https://www.facebook.com/huswelltrading" target="_blank">Facebook Page</a>
+                    and <a href="https://huswell.ph/" target="_blank"> Website</a>, where you can order.
+                </p>
+            </div>
+            <button class="collapsible">7. How can I get my order when it is finished?</button>
+            <div class="content">
+                <p>
+                    Usually, the delivery will be shouldered by the clients through a third-party courier like Lalamove, Grab, etc.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
         
-    </main>
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+    <div class="email-title">
+        <h1> SEND US EMAIL NOW! </h1>
+    </div>
+        <main>
+            <main>
+                <div id="feedback">
+                    <form action="mailto:jarredjohnmadelabernal@gmail.com" method="post">
+                        <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_email" />
+                        </li>
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button">
+                            <button type="submit">Send your message</button>
+                        </li>
+                        </ul>
+                    </form>
+                </div>
+            </main>
+            <script>
+                // get the feedback div element so we can do something with it.
+                const feedbackElement = document.getElementById('feedback');
+                // get the form so we can read what was entered in it.
+                const formElement = document.forms[0];
+                // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                formElement.addEventListener('submit', function(e) {
+                    // stop the form from doing the default action.
+                    e.preventDefault();
+                    // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                    feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                    // make the feedback element visible.
+                    feedbackElement.style.display = "block";
+                    // add a class to move everything down so our message doesn't cover it.
+                    document.body.classList.toggle('moveDown');
+                });
+            </script>
+        </main>
     <footer>
         <p>JA PACKAGING SERVICES &copy; 2022</p>
         <p><a href="index.html">HOME</a></p>
