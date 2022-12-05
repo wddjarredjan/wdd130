@@ -417,6 +417,7 @@ button {
 .collapsible-box {
   margin-top: 50px;
   grid-column-start: 2;
+  background-color:#01161E;
 }
 
 .email-title {
