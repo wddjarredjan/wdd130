@@ -3,9 +3,10 @@ body {
   display: grid;
   grid-template-columns: 3fr;
   background-color: #d4a67c;
+  font-family: 'Archivo Narrow', Arial, sans-serif;
 }
 h1 {
-  font-family: 'Permanent Marker';
+  font-family: 'Permanent Marker', Arial, sans-serif;
   font-size: 50px;
 }
 /* The Overlay (background) */
@@ -190,7 +191,7 @@ footer a:hover
 #nav-link a {
     color: #01161E;
     padding: 10px;
-    font-family:'Archivo Narrow';
+    font-family: 'Archivo Narrow', Arial, sans-serif;
     font-size: medium;
 }
 #nav-link a:hover {
@@ -208,7 +209,7 @@ footer a:hover
   color: #01161E;
   text-align: center;
   font-size: 1.5em;
-  font-family: 'Permanent Marker';
+  font-family: 'Permanent Marker', Arial, sans-serif;
 }
 .contents p {
   font-style: italic;
@@ -229,7 +230,7 @@ footer a:hover
   margin: auto;
   width: 100%;
   font-size: 25px;
-  font-family: 'Archivo Narrow';
+  font-family: 'Archivo Narrow', Arial, sans-serif;
 }
 .background-img {
   max-width: 50%;
@@ -248,7 +249,7 @@ footer a:hover
   margin-top: -100px;
 }
 .question-box h1 {
-  font-family: 'Permanent Marker';
+  font-family: 'Permanent Marker', Arial, sans-serif;
   text-align: center;
   margin-top: -50px;
   font-size: xx-large;
@@ -367,7 +368,7 @@ button {
 }
 .textbox-faqs p {
   color: #01161E;
-  font-family: 'Archivo Narrow';
+  font-family: 'Archivo Narrow', Arial, sans-serif;
   font-size: x-large;
 }
 
