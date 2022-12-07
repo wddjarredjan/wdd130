@@ -429,3 +429,37 @@ button {
 .email-title h1 {
   font-size: x-large;
 }
+
+/* GALLERY FOR ABOUT US PAGE */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 210px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 200px;
+  height: 200px;
+  transition: transform .5s;
+}
+
+div.gallery img:hover {
+  transform: scale(1.2);
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+  height: 50px;
+  width: 200px;
+}
+
+.product-title h1 {
+  padding: 5px;
+  background-color:#d9c2a3;
+}
