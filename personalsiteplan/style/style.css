@@ -45,7 +45,7 @@ h1 {
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-  color:#01161E;
+  color:#EDFFAB;
 }
 
 /* Position the close button (top right corner) */
@@ -145,10 +145,10 @@ h1 {
   margin-bottom: 80px;
   padding: 5px;
   max-width: fit-content;
-  background-color: #EDFFAB;
+  background-color: #01161E;
 }
 .onclick:hover {
-  color:#01161E;
+  color:#EDFFAB;
   transform: scale(1.2);
 }
 .home-img:hover {
@@ -195,7 +195,7 @@ footer a:hover
     font-size: medium;
 }
 #nav-link a:hover {
-    background-color:#EDFFAB;
+    background-color: #01161E;
 }
 #nav-link {
     margin-bottom: 80px;
@@ -374,8 +374,8 @@ button {
 
 /*FOR COLLAPSIBLE*/
 .collapsible {
-  background-color: #d4a67c;
-  color:#01161E;
+  background-color: #01161E;
+  color: #d4a67c;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -385,8 +385,11 @@ button {
   font-size: 15px;
 }
 
-.active, .collapsible:hover {
-  background-color:#d9c2a3;
+.active {
+  background-color:#01161E;
+}
+.collapsible:hover {
+  color: #EDFFAB;
 }
 
 .content {
@@ -418,7 +421,6 @@ button {
 .collapsible-box {
   margin-top: 50px;
   grid-column-start: 2;
-  background-color:#01161E;
 }
 
 .email-title {

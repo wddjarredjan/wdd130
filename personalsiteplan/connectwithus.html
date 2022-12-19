@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONNECT WITH US || JA PACKAGING SERVICES</title>
     <link type="text/css" rel="stylesheet" href="style/style.css">
+
+    <script>
+        function display_ct5() {
+        var x = new Date()
+        var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+        
+        var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear(); 
+        x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds() + " " + ampm;
+        document.getElementById('ct5').innerHTML = x1;
+        display_c5();
+         }
+         function display_c5(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('display_ct5()',refresh)
+        }
+        display_c5()
+    </script>
+        <span id='ct5' style="color:#01161E;text-align:right;font-size: large;font-style:bold;"></span>
 </head>
 <body>
     <header>
@@ -14,7 +32,7 @@
                 <img src="images/huswell.jpg" alt="Huswell Trading Logo">
                 <img src="images/logo.png" alt="Main Logo Ja Packaging Services">
             </div>
-            <div class="onclick" style="text-align:center;">
+            <div class="onclick" style="text-align:center;color: #edffab;">
                 <span onclick="openNav()"> MENU </span>
             </div>
             </div>
